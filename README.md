@@ -1,2 +1,1 @@
-# RockPaperScissorsEXT
-Rock-Paper-Scissors-Lizard-Spock Project
+# RPSLS_FSF_CSharp_Starter
