@@ -8,7 +8,7 @@ namespace RPSLS
 {
     internal abstract class Player
     {
-        //Member Variabes (HAS A)
+        //Member Variables (HAS A)
         public string name;
         public List<string> gestures;
         public string chosenGesture;

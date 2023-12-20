@@ -8,7 +8,7 @@ namespace RPSLS
 {
     internal class Game
     {
-        //Member Variabes (HAS A)
+        //Member Variables (HAS A)
         public Player playerOne;
         public Player playerTwo;
 
@@ -21,17 +21,30 @@ namespace RPSLS
         //Member Methods (CAN DO)
         public void WelcomeMessage()
         {
-            Console.WriteLine("Welcome to RPSLS! Here are the rules:\n");
+            Console.WriteLine("Welcome to RPSLS! Here are the rules:\n" +
+                "Scissors cut paper\n" +
+                "Paper covers rock\n" +
+                "Rock breaks scissors\n" +
+                "Rock crushes lizard\n" +
+                "Lizard poisons Spock\n" +
+                "Spock smashes scissors\n" +
+                "Scissors decapitates lizard\n" +
+                "Lizard eats paper\n" +
+                "Paper disproves Spock\n" +
+                "Spock vaporizes rock");
         }
 
         public int ChooseNumberOfHumanPlayers()
         {
-            return 0;
+            Console.WriteLine("How many human players will participate?");
+            string humanPlayers = Console.ReadLine();
+            int officialPlayers = int.Parse(humanPlayers);
+            return officialPlayers;
         }
 
         public void CreatePlayerObjects(int numberOfHumanPlayers)
         {
-
+            playerOne
         }
 
         public void CompareGestures()
@@ -47,6 +60,7 @@ namespace RPSLS
         public void RunGame()
         {
             WelcomeMessage();
+            ChooseNumberOfHumanPlayers();
         }
     }
 }
