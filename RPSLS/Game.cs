@@ -15,7 +15,9 @@ namespace RPSLS
         //Constructor
         public Game()
         {
-
+            int playerOneScore = 0;
+            int playerTwoScore = 0;
+            new Random();
         }
 
         //Member Methods (CAN DO)
@@ -31,7 +33,8 @@ namespace RPSLS
                 "Scissors decapitates lizard\n" +
                 "Lizard eats paper\n" +
                 "Paper disproves Spock\n" +
-                "Spock vaporizes rock");
+                "Spock vaporizes rock\n" +
+                "The 1st to 2 wins is the champion.");
         }
 
         public int ChooseNumberOfHumanPlayers()
@@ -44,7 +47,7 @@ namespace RPSLS
 
         public void CreatePlayerObjects(int numberOfHumanPlayers)
         {
-            playerOne
+            playerOne = new PlayerOne("John");
         }
 
         public void CompareGestures()
